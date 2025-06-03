@@ -1,69 +1,88 @@
-# Mountzilla
-Mountzilla: DIY Harmonic Equatorial Mount
-"A mount so strong, NASA blocked me."
+# 🚀 Mountzilla  
+*A mount so strong, NASA blocked me.*
 
-🧠 About Mountzilla
+Mountzilla started as a crazy idea: *“If my Pixel phone can capture galaxies standing still… what if it tracked the stars too?”*  
+That question cost me **450 JDs**, several weekends, and most of my desk space — but the result? A DIY harmonic equatorial mount so capable, it made NASA nervous.
 
-Mountzilla is a DIY high-capacity equatorial mount project inspired by open-source designs like AlkaidMount and DHEM. Powered by a harmonic drive, GT2 pulley system, and OnStepX firmware, Mountzilla combines precision, stability, and ridiculous payload power—while being fully open-source and hilarious in spirit.
+I built Mountzilla to prove you don’t need to sell a kidney for precision tracking. Harmonic drive mounts are normally *outrageously expensive*, so I set out to build one myself — cheap, powerful, and fully open-source.
 
-
-🔧 Features:
-
-🔩 CSG 25-100-2A Harmonic Drive
-⚙️ 5:1 GT2 Belt Reduction
-🌀 NEMA 23 0.9° Motors (23HM22-2804S)
-🧠 FYSETC E4 Board with OnStepX Firmware
-📡 RTC/GPS Time Sync Options
-🛠️ Fully Custom Tangent-Style DIY Wedge
-📸 Mobile Astrophotography Friendly (Tested with Pixel 8 Pro)
-🌌 Payload tested: up to 30–40kg
+Inspired by amazing open projects like [AlkaidMount](https://github.com/alanzjl/AlkaidMount) and [DHEM](https://github.com/polvinc/DHEM), Mountzilla uses a harmonic drive, GT2 pulley system, and OnStepX firmware to deliver rock-solid accuracy and ridiculous payload capacity — all while being way too fun to build.
 
 
-📁 Repository Structure
+---
 
+## 🧠 Features
+
+- ⚙️ **Harmonic Drive** – CSG 25-100-2A  
+- 🔩 **Pulley Reduction** – 5:1 GT2 belt drive  
+- 🌀 **Stepper Motors** – NEMA 23 (400 steps, 0.9°, 23HM22-2804S)  
+- 🧠 **Controller** – FYSETC E4 running OnStepX  
+- ⏱️ **Time Sync** – RTC included  
+- 🧱 **Mount Base** – Custom powerful Tangent-Style DIY Wedge  
+- 📸 **Astro-Ready** – Tested with Pixel 8 Pro 5x (Astro mode, and trust me it's fantastic)
+- 🧲 **Payload** – Tested with 30–40 kg capacity (it can hold more)  
+- 🤖 **Voice Control** – Compatible with Gemini for hands-free control(need extra work & **external PC** to run Gemini api)  
+
+---
+
+## 📁 Repository Structure
+
+```
 Mountzilla/
-├── firmware/           # OnStepX configuration files
-├── mechanical/         # STL, STEP, SLDPRT files for 3D printing or CNC
-├── wedge/              # Custom tangent-style wedge designs
-├── electronics/        # Wiring diagrams, board pinouts
-├── guides/             # Assembly and calibration guides
-└── docs/               # Technical docs and setup walkthroughs
+├── firmware/           # OnStepX config files
+├── mechanical/         # STL, STEP, SLDPRT for 3D print/CNC
+├── wedge/              # Tangent-style wedge plans
+├── electronics/        # Wiring diagrams, pinouts
+├── guides/             # Assembly, tuning, calibration
+└── docs/               # Technical documentation
+```
 
+---
 
-🚀 Getting Started
+## 🛠️ Getting Started
+After check your wallet :)
 
-Clone the repo
-git clone https://github.com/ramiazap/Mountzilla.git
-Flash OnStepX to FYSETC E4
-Follow guides/build_guide.md to assemble
-Connect via USB/WiFi + control with any OnStep client
-Guide with PHD2 + webcam or guide cam
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/ramiazap/Mountzilla.git
+   ```
+2. Flash OnStepX to the FYSETC E4 board  
+3. Build the mount following `/guides/build_guide.md`  
+4. Connect via USB/Wi-Fi and control using any OnStep client  
+5. For guiding, use PHD2 with a webcam or guide camera  
 
-📷 Gallery
+---
 
-Coming soon — test shots, build photos, and time-lapses.
+## 🧪 Performance
 
-🧪 Performance
+| Specification         | Value                         |
+|-----------------------|-------------------------------|
+| RA RMS Error          | ~0.5–1.5 arcsec (tested)      |
+| DEC Slew Speed        | Up to 5°/s                    |
+| Max Payload           | 30–40 kg (it can hold more)   |
+| Voice Control         | Gemini (need extra work)      |
 
-Spec. Value:
+---
 
-RA RMS - ~0.5–1.5 arcsec (tested)
-DEC Slew - Adjustable up to 5°/s
-Tracking Accuracy - Excellent (mobile long-exposure tested)
-Max Payload - 30–40 kg
-🤖 Voice Control Integration - Compatible with Gemini for voice-activated mount control — because pressing buttons is for amateurs.
+## 📷 Gallery
 
-🥔 Credits
+Coming soon: build photos, test shots, time-lapses, and memes.
 
-Developed by me :)
-Powered by: OnStepX, FYSETC, DIY caffeine.
+---
 
-Special thanks to [ChatGPT] and [Gemini] for guiding this journey,
-& my Friends: Wesam Khaled, Afnan AbuQlesha, Raed Abushekha, Sadeen Srour.
+## 🥔 Credits
 
-📜 License
+Created by [Rami Azap](https://github.com/ramiazap)  
+Powered by: OnStepX, FYSETC, caffeine, and stubbornness.
 
-MIT License — free to fork, tweak, and ride into the stars.
+Special thanks to:  
+**Wesam Khaled, Afnan AbuQlesha, Raed Abushekha, Sadeen Srour**  
+and honorary AI co-developers: **ChatGPT & Gemini**
 
+---
 
-"Built a telescope mount because IKEA didn’t sell one."
+## 📜 License
+
+MIT License — fork it, tweak it, and launch it to the stars.
+
+> "Built a telescope mount because IKEA didn’t sell one."  
