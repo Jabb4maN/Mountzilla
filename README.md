@@ -1,4 +1,4 @@
-# 🚀 Mountzilla  
+# 🚀 Mountzilla: DIY Harmonic Equatorial Mount
 *A mount so strong, NASA blocked me.*
 
 Mountzilla started as a crazy idea: *“If my Pixel phone can capture galaxies standing still… what if it tracked the stars too?”*  
