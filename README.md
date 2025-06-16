@@ -48,7 +48,7 @@ Before diving in, a moment of silence for your wallet... (or just grab a big cof
 
 1.  Clone the repo
     ```bash
-    git clone [https://github.com/jabb4man/Mountzilla.git](https://github.com/jabb4man/Mountzilla.git)
+    git clone [https://github.com/jabb4man/Mountzilla.git]
     ```
 2.  Gather all necessary components from the [Bill of Materials](docs/BOM.md).
 3.  Fabricate parts using the SolidWorks files found in `Design_Files/` (e.g., export to STL for 3D printing or DXF for CNC).
