@@ -29,44 +29,54 @@ Inspired by amazing open projects like [AlkaidMount](https://github.com/alanzjl/
 
 ```
 Mountzilla/
-├── firmware/           # OnStepX config files
-├── mechanical/         # STL, STEP, SLDPRT for 3D print/CNC
-├── wedge/              # Tangent-style wedge plans
-├── electronics/        # Wiring diagrams, pinouts
-├── guides/             # Assembly, tuning, calibration
-└── docs/               # Technical documentation
+├── Firmware/
+│   └── Mountzilla_OnStepX_Config
+├── Design_Files/
+│   ├── dovetail
+│   └── motor_housing
+│   └── wedge
+├── Guides/
+│   └── build_guide.md
+├── Docs/
+│   └── BOM.md
 ```
 
 ---
 
 ## 🛠️ Getting Started
-After check your wallet :)
+Before diving in, a moment of silence for your wallet... (or just grab a big coffee!)
 
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/ramiazap/Mountzilla.git
-   ```
-2. Flash OnStepX to the FYSETC E4 board  
-3. Build the mount following `/guides/build_guide.md`  
-4. Connect via USB/Wi-Fi and control using any OnStep client  
-5. For guiding, use PHD2 with a webcam or guide camera  
+1.  Clone the repo
+    ```bash
+    git clone [https://github.com/jabb4man/Mountzilla.git](https://github.com/jabb4man/Mountzilla.git)
+    ```
+2.  Gather all necessary components from the [Bill of Materials](docs/BOM.md).
+3.  Fabricate parts using the SolidWorks files found in `Design_Files/` (e.g., export to STL for 3D printing or DXF for CNC).
+4.  Flash OnStepX to the FYSETC E4 board using the configuration provided in `firmware/Mountzilla_OnStepX_Config`.
+5.  Build the mount following the detailed instructions in [`/guides/build_guide.md`](guides/build_guide.md).
+6.  Connect via USB/Wi-Fi and control using any OnStep client (e.g., Stelalrium, ASCOM/INDI drivers).
+7.  For guiding, use PHD2 with a webcam or dedicated guide camera. 
 
 ---
 
 ## 🧪 Performance
 
-| Specification         | Value                         |
-|-----------------------|-------------------------------|
-| RA RMS Error          | ~0.5–1.5 arcsec (tested)      |
-| DEC Slew Speed        | Up to 5°/s                    |
-| Max Payload           | 30–40 kg (it can hold more)   |
-| Voice Control         | Gemini (need extra work)      |
+| Specification         | Value                               |
+|-----------------------|-------------------------------------|
+| RA RMS Error          | ~0.5–1.5 arcsec (tested)            |
+| DEC Slew Speed        | Up to 5°/s                          |
+| Max Payload           | 30–40 kg (it can hold more)         |
+| Voice Control         | Gemini (need extra work)            |
+| Total Gear Ratio      | 400:1 (100:1 gear * 5:1 Pulley)     |
+| Resolution            | ~0.14 arcsec/step (calculated)      |
+| Materials             | Aluminum or Steel for more cheap    |
+| Estimated Cost        | ~Approx. $450 to $600 depend on BOM |
 
 ---
 
 ## 📷 Gallery
 
-Coming soon: build photos, test shots, time-lapses, and memes.
+Coming soon: build photos, test shots, time-lapses, and memes :).
 
 ---
 
